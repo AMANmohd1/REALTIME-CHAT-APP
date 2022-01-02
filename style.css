@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 3vw;
+    margin: 15px;
+}
+
+body{
+    background-image: url('bg-wall.jpg');
+    background-position: top;
+    background-size: cover;
+    color: white;
+}
+
+.container{
+    background-color: red;
+    width: 70vw;
+    margin: auto;
+    height: 75vh;
+}
+
+.message{
+    background-color: blue;
+    width: 28vw;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 13px;
+}
+
+.left{
+    float: right;
+    clear: both;
+}
+
+.right{
+    float: left;
+    clear: both;
+}
