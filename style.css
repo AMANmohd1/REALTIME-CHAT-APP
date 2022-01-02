@@ -14,13 +14,17 @@ body{
     background-position: top;
     background-size: cover;
     color: white;
+    height: 100vh;
 }
 
 .container{
-    background-color: red;
+    background-color: #c36e4552;
     width: 70vw;
     margin: auto;
     height: 75vh;
+    padding: 8px;
+    margin-bottom: 10px;
+    overflow-y: auto;
 }
 
 .message{
@@ -39,4 +43,21 @@ body{
 .right{
     float: left;
     clear: both;
+}
+
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+#messageImp{
+    width: 62%;
+    border-radius: 14px;
+    height: 6vh;
 }
