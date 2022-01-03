@@ -20,7 +20,7 @@ server.listen(3000,()=>{
 const io = require('socket.io')(server)
 
 io.on('connection',(socket) =>{
-    console.log('New Connection WS');
+    // console.log('New Connection WS');
 
     socket.on('new-user-joined',name =>{
         users[socket.id] = name;
@@ -29,5 +29,10 @@ io.on('connection',(socket) =>{
 
     socket.on('send',message=>{
         socket.broadcast.emit('receive',{message,name: users[socket.id]})
+    });
+
+    socket.on('disconnect',message=>{
+        socket.broadcast.emit('left',users[socket.id])
+        delete users[socket.id];
     });
 })
