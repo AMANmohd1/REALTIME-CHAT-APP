@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname,'public')));
 const users = {};
 
 app.get('/',(req,res)=>{
-    res.sendFile('D:\WEB DEV\REALTIME CHAT APP\public\index.html')
+    res.render('public\index.html')
 })
 
 const port = process.abort.env.PORT || 3000;
