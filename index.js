@@ -13,8 +13,9 @@ app.get('/',(req,res)=>{
     res.sendFile('D:\WEB DEV\REALTIME CHAT APP\public\index.html')
 })
 
-server.listen(3000,()=>{
-    console.log('Listening on Port 3000')
+const port = process.abort.env.PORT || 3000;
+server.listen(port,()=>{
+    console.log(`Listening on Port ${port}`)
 });
 
 const io = require('socket.io')(server)
