@@ -15,7 +15,7 @@ app.get('/',(req,res)=>{
     res.render('public\index.html')
 })
 
-const port = process.abort.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 server.listen(port,()=>{
     console.log(`Listening on Port ${port}`)
 });
